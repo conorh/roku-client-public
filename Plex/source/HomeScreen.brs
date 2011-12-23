@@ -87,9 +87,10 @@ Function displaySection(section As Object, homeScreen As Object) As Dynamic
     else if section.key = "prefs" then
     	Preferences(homeScreen)  
     else
-    	screen = preShowPosterScreen(section.Title, "")
-    	showPosterScreen(screen, section)
-    	'showGridScreen(section)
+    	'screen = preShowPosterScreen(section.Title, "")
+    	'showPosterScreen(screen, section)
+		grid = preShowGridScreen()
+    	showGridScreen(grid, section)
     endif
     return 0
 End Function
